@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kyobongseo.github.io/blog/categories/</loc>
+    <lastmod>2024-08-06T03:09:38-05:00</lastmod>
+  </url><url>
+    <loc>https://kyobongseo.github.io/blog/tags/linux/</loc>
+    <lastmod>2024-08-06T03:09:38-05:00</lastmod>
+  </url><url>
     <loc>https://kyobongseo.github.io/blog/</loc>
     <lastmod>2024-08-06T03:09:38-05:00</lastmod>
   </url><url>
@@ -11,8 +17,12 @@
     <loc>https://kyobongseo.github.io/blog/posts/</loc>
     <lastmod>2024-08-06T03:09:38-05:00</lastmod>
   </url><url>
-    <loc>https://kyobongseo.github.io/blog/categories/</loc>
+    <loc>https://kyobongseo.github.io/blog/categories/sad-server/</loc>
+    <lastmod>2024-08-06T03:09:38-05:00</lastmod>
   </url><url>
     <loc>https://kyobongseo.github.io/blog/tags/</loc>
+    <lastmod>2024-08-06T03:09:38-05:00</lastmod>
+  </url><url>
+    <loc>https://kyobongseo.github.io/blog/archives/</loc>
   </url>
 </urlset>
