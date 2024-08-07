@@ -9,11 +9,11 @@
     <lastBuildDate>Tue, 06 Aug 2024 03:09:38 -0500</lastBuildDate>
     <atom:link href="https://kyobongseo.github.io/blog/categories/sad-server/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Myfirstpost</title>
-      <link>https://kyobongseo.github.io/blog/posts/myfirstpost/</link>
+      <title>1 Santiago Writeup</title>
+      <link>https://kyobongseo.github.io/blog/posts/sadserver-1-santiago/</link>
       <pubDate>Tue, 06 Aug 2024 03:09:38 -0500</pubDate>
-      <guid>https://kyobongseo.github.io/blog/posts/myfirstpost/</guid>
-      <description>This is a post.&#xA;This is a code snippet </description>
+      <guid>https://kyobongseo.github.io/blog/posts/sadserver-1-santiago/</guid>
+      <description>ps to list processes&#xA;admin@i-0cc87c45cacd809cb:~$ ps PID TTY TIME CMD 693 pts/1 00:00:00 sh 694 pts/1 00:00:00 bash 949 pts/1 00:00:00 ps Using ps -e (or ps -A) can list all the processes:&#xA;admin@i-0376cdb4df4f63584:~$ ps -e PID TTY TIME CMD 1 ? 00:00:02 systemd 2 ? 00:00:00 kthreadd !--Omitting lines for brevity--! 582 ? 00:00:00 systemd-logind 587 ? 00:00:00 badlog.py 590 ? 00:00:00 sshd 591 tty1 00:00:00 agetty PID 587 has suspicious output 587 ?</description>
     </item>
   </channel>
 </rss>

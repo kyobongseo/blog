@@ -18,7 +18,7 @@
 <link rel="alternate" href="/blog/index.xml?c=01e1b900e89c25bc088827127d7b8e09cd197448" type="application/rss+xml" title="RSS" />
 <meta property="og:title" content="1 Santiago Writeup - Mrotaku Blog">
 </meta>
-<meta property="og:url" content="http://localhost:1313/blog/posts/myfirstpost/">
+<meta property="og:url" content="http://localhost:1313/blog/posts/santiago/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Mrotaku Blog">
 <meta property="og:description" content="This is a simple blog theme for Hugo.">
@@ -29,7 +29,7 @@
 <meta name="twitter:site" content="@GoHugoIO"></meta>
 <meta name="twitter:creator" content="@GoHugoIO"></meta>
 <meta name="twitter:title" content="1 Santiago Writeup - Mrotaku Blog"></meta>
-<meta name="twitter:url" content="http://localhost:1313/blog/posts/myfirstpost/"></meta>
+<meta name="twitter:url" content="http://localhost:1313/blog/posts/santiago/"></meta>
 <meta name="twitter:description" content="This is a simple blog theme for Hugo."></meta>
 
 <meta property="og:image" content="http://localhost:1313/blog//images/featured_image.jpg">
@@ -97,11 +97,82 @@
     PID TTY          TIME CMD
       1 ?        00:00:02 systemd
       2 ?        00:00:00 kthreadd
-      !--Omitting lines for brevity--!
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 kworker/0:0-events
+      6 ?        00:00:00 kworker/0:0H-events_highpri
+      7 ?        00:00:00 kworker/u4:0-events_unbound
+      8 ?        00:00:00 mm_percpu_wq
+      9 ?        00:00:00 rcu_tasks_rude_
+     10 ?        00:00:00 rcu_tasks_trace
+     11 ?        00:00:00 ksoftirqd/0
+     12 ?        00:00:00 rcu_sched
+     13 ?        00:00:00 migration/0
+     14 ?        00:00:00 kworker/0:1-events
+     15 ?        00:00:00 cpuhp/0
+     16 ?        00:00:00 cpuhp/1
+     17 ?        00:00:00 migration/1
+     18 ?        00:00:00 ksoftirqd/1
+     19 ?        00:00:00 kworker/1:0-events
+     20 ?        00:00:00 kworker/1:0H-events_highpri
+     22 ?        00:00:00 kworker/u4:1-events_unbound
+     23 ?        00:00:00 kdevtmpfs
+     24 ?        00:00:00 netns
+     25 ?        00:00:00 kauditd
+     26 ?        00:00:00 khungtaskd
+     27 ?        00:00:00 oom_reaper
+     28 ?        00:00:00 writeback
+     29 ?        00:00:00 kcompactd0
+     30 ?        00:00:00 ksmd
+     32 ?        00:00:00 kworker/1:1-events
+     50 ?        00:00:00 kintegrityd
+     51 ?        00:00:00 kblockd
+     52 ?        00:00:00 blkcg_punt_bio
+     53 ?        00:00:00 kworker/1:1H-kblockd
+     54 ?        00:00:00 kswapd0
+     55 ?        00:00:00 kthrotld
+     56 ?        00:00:00 acpi_thermal_pm
+     57 ?        00:00:00 nvme-wq
+     58 ?        00:00:00 nvme-reset-wq
+     59 ?        00:00:00 nvme-delete-wq
+     60 ?        00:00:00 kworker/u4:2-events_unbound
+     61 ?        00:00:00 kworker/u4:3-events_unbound
+     62 ?        00:00:00 kworker/0:1H-kblockd
+     63 ?        00:00:00 ipv6_addrconf
+     70 ?        00:00:00 kworker/0:2-events
+     73 ?        00:00:00 kstrp
+     78 ?        00:00:00 kworker/u5:0
+    114 ?        00:00:00 ena
+    115 ?        00:00:00 kworker/1:2-events
+    133 ?        00:00:00 jbd2/nvme0n1p1-
+    134 ?        00:00:00 ext4-rsv-conver
+    195 ?        00:00:00 systemd-journal
+    212 ?        00:00:00 systemd-udevd
+    235 ?        00:00:00 cryptd
+    316 ?        00:00:00 kworker/0:3-events
+    394 ?        00:00:00 dhclient
+    468 ?        00:00:00 dhclient
+    563 ?        00:00:00 gotty
+    564 ?        00:00:00 sadagent
+    567 ?        00:00:00 cron
+    568 ?        00:00:00 dbus-daemon
+    579 ?        00:00:00 rsyslogd
     582 ?        00:00:00 systemd-logind
     587 ?        00:00:00 badlog.py
     590 ?        00:00:00 sshd
     591 tty1     00:00:00 agetty
+    592 ttyS0    00:00:00 agetty
+    599 ?        00:00:00 unattended-upgr
+    603 ?        00:00:00 chronyd
+    604 ?        00:00:00 chronyd
+    682 ?        00:00:00 kworker/1:3-events
+    742 pts/0    00:00:00 bash
+    746 pts/0    00:00:00 asciinema
+    751 pts/0    00:00:00 asciinema
+    752 pts/1    00:00:00 sh
+    753 pts/1    00:00:00 bash
+    774 ?        00:00:00 kworker/u4:4-flush-259:0
+    854 pts/1    00:00:00 ps
 </code></pre><p>PID 587 has suspicious output
 <code>587 ?        00:00:00 badlog.py</code></p>
 <pre tabindex="0"><code>admin@i-0376cdb4df4f63584:~$ ps 587
@@ -147,8 +218,8 @@ badlog.py 584 admin    3w   REG  259,1    17093 265802 /var/log/bad.log
 
 <div class="content-footer-item neighbor">
 	
-	<div class="prev-post">Prev: <a href="/blog/posts/santiago/">1 Santiago Writeup</a></div>
 	
+	<div class="next-post">Next: <a href="/blog/posts/myfirstpost/">1 Santiago Writeup</a></div>
 	
 </div>
 
